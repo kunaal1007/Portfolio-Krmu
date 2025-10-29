@@ -1,87 +1,134 @@
-<!--this is a portfolio project for krmu web development-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunaal Singh Portfolio</title>
+    <title>Document</title>
 </head>
-
 <body>
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kunaal singh Portfolio">
+    <title>Kunaal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/html/images/favicon.ico">
+    <style>/* Given a touch of CSS to make code more editable for future styling*/
+    table.bordered{border-collapse: collapse;}
+    table.bordered th,
+    table.bordered td {border: 1px solid black(75, 115, 180); padding: 4px;}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER AND NAVIGATION -->
     <header>
         <h1>KUNAAL SINGH</h1>
-        <hr>
-        <img src="my image1.jpg" alt="Kunaal Singh Photo" width="150">
-    </header>
-
-    <main>
-        <section>
-            <h2>Welcome To My Portfolio</h2>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am Kunaal Singh, a Computer Science Engineering (CSE) student and web development student.<br>
-                I am currently in my 1st year at KR Mangalam University.<br>
-                I am passionate about learning coding and web development.
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li>Portfolio Website</li>
-                <li>Registration Form</li>
+        <nav>
+              <ul>
+                <li><a href="#about" title="Know me">About</a></li>
+                <li><a href="#projects" title="My creations">Projects</a></li>
+                <li><a href="#skills" title="My Achievements">Technical Skills</a></li>
+                <li><a href="#contact" title="Let's connect">Contact</a></li>
             </ul>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p id="hello">Hello! I am a web development student. This is my personal portfolio website.</p>
+        </section>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main id="maincontent">
+        <h2 id="aboutme">About Me:</h2>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <img src="./public/img/k1.jpg" alt="Photo of Kunaal singh" width="170" height="170">
+            <br>
+            <p>I am passionate about learning web development and building creative, clean and responsive websites.</p>
+            <p>I did my schooling from Kendriya vidyalaya, JNU, New Delhi
+                where I developed skills in Python coding, Cricket , volleyball,  and more.
+                Beyond academics and activities, the life lessons and experiences I gained there, 
+                continue to shape who I am today.
+            </p>
+            <br>
+            <p>My School</p>
+            <img src="./public/img/k.jpg" alt="Kendriya vidyalaya JNU" width="300">
         </section>
 
-        <hr>
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>My Projects:</h2>
+            <ul>
+                 <li><a href="./index.html"><b>Portfolio Website:</b></a> A personal one-page bio to showcase my bio, skills and contact details</li>
+                <li><b>Websites Bookmark:</b></a> A simple page to save useful links</li>
+                <li><b>Birthday Card:</b></a> A creative greeting card webpage designed with HTML and CSS for styling (coming soon...)</li>
+                <li><a href="#contact"><b>User Form:</b></a> A form webpage with fields like Name, Email, Feedback, Gender</li>
+            </ul>
+             </section>
 
+        <!-- SKILLS SECTION -->
         <section id="skills">
-            <h2>Technical Skills</h2>
-            <table border="2" cellpadding="10">
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>HTML</td></tr>
-                    <tr><td>Python</td></tr>
-                    <tr><td>CSS</td></tr>
-                </tbody>
+            <h2>Technical Skills:</h2>
+            <table class="bordered">
+                <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Learning</td>
+                </tr>
             </table>
         </section>
-
-        <hr>
-
+        <!-- FOOTER -->
+        <footer>
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p><strong>Name:</strong> Kunaal Singh</p>
-            <p><strong>Email:</strong> kunal123singh123@gmail.com</p>
-
-            <form action="#" method="post">
-                <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
-
-                <input type="submit" value="Send Message">
+            <h2>Contact Me:</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input id="name" type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input id="email" type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label 
+                        <td><label for="feedback">Feedback:</label></td>
+                        <td><textarea id="feedback" name="feedback"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input id="male" type="radio" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <br>
+                            <input id="female" type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit">
+                   <p>submit</p>
+                </button>
             </form>
         </section>
-
+        </footer>
     </main>
-
-    <footer>
-        <hr>
-        <p>Thank you for visiting my portfolio!</p>
-    </footer>
-
+    <button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
 </body>
 </html>
