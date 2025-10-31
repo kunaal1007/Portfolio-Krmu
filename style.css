@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background:  linear-gradient(69deg, #5603f0, #8563c4);
+    background:  linear-gradient(69deg, blue, blue);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,9 +31,6 @@ header {
     margin-bottom: 20px;
 }
 
-#hello{
-    color:#f0f4f8;
-}
 
 header h1 {
     margin: 0;
